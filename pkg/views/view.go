@@ -9,8 +9,8 @@ import (
 )
 
 var (
-	TemplateDir string = "views/"
-	LayoutDir   string = "views/layouts/"
+	TemplateDir string = "pkg/views/"
+	LayoutDir   string = "pkg/views/layouts/"
 	TemplateExt string = ".gohtml"
 )
 

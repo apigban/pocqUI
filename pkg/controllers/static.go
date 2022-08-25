@@ -1,6 +1,6 @@
 package controllers
 
-import "github.com/apigban/lenslocked_v1/views"
+import "github.com/apigban/pocqUI/pkg/views"
 
 func NewStatic() *Static {
 	return &Static{

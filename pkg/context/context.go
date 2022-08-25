@@ -3,7 +3,7 @@ package context
 import (
 	"context"
 
-	"github.com/apigban/lenslocked_v1/models"
+	"github.com/apigban/pocqUI/pkg/models"
 )
 
 const (

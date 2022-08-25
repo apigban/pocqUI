@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/apigban/lenslocked_v1/controllers"
-	"github.com/apigban/lenslocked_v1/middleware"
-	"github.com/apigban/lenslocked_v1/models"
+	"github.com/apigban/pocqUI/pkg/controllers"
+	"github.com/apigban/pocqUI/pkg/middleware"
+	"github.com/apigban/pocqUI/pkg/models"
 	"github.com/gorilla/mux"
 )
 
@@ -24,6 +24,7 @@ func main() {
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable",
 		host, port, user, password, dbname)
 
+	// services, err := models.NewServices(psqlInfo)
 	services, err := models.NewServices(psqlInfo)
 	must(err)
 	// TODO - FIX below, it doesnt compile because Close(), AutoMigrate() and DestructiveReset() have not been moved to the top level service

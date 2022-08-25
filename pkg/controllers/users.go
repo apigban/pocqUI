@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/apigban/lenslocked_v1/models"
-	"github.com/apigban/lenslocked_v1/rand"
-	"github.com/apigban/lenslocked_v1/views"
+	"github.com/apigban/pocqUI/pkg/models"
+	"github.com/apigban/pocqUI/pkg/rand"
+	"github.com/apigban/pocqUI/pkg/views"
 )
 
 type Users struct {
